@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Registration Form</title>
+         <style>
+    #center
+    {
+        text-align: center;
+
+    }
+    
+
+    
+    table {
+        
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+    <div id="center">
+  <h1>Registration Form</h1>
+
+  <form id="registrationForm">
+    <div>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" required>
+    </div><br>
+    <div>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" required>
+    </div><br>
+    <div>
+        <label for="email">Email:</label>
+        <input type="text" id="email" required>
+    </div><br>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+    </div><br>
+    <div>
+        <label for="cpassword">conform Password:</label>
+        <input type="password" id="cpassword" required>
+    </div><br>
+    <div>
+      <button type="button" onclick="confirmRegistration()">Register</button>
+    </div><br>
+  </form>
+
+  <div id="confirmation" style="display: none;">
+    <p>Are you sure you want to submit?</p>
+    <button onclick="submitRegistration()">Yes</button>
+    <button onclick="cancelRegistration()">No</button>
+  </div>
+
+  <div id="registrationData" style="display: none;">
+    <h2>Registration Data</h2>
+    <table align="center" id="dataTable">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>conform Password</th>
+        </tr>
+      </thead>
+      <tbody id="dataBody"></tbody>
+    </table>
+  </div>
+    </div>
+
+  <script>
+    function confirmRegistration() {
+      document.getElementById("registrationForm").style.display = "none";
+      document.getElementById("confirmation").style.display = "block";
+    }
+
+    function submitRegistration() {
+      const fname = document.getElementById("fname").value;
+      const lname = document.getElementById("lname").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const cpassword = document.getElementById("cpassword").value;
+
+      const newRow = document.createElement("tr");
+      const fnamecell = document.createElement("td");
+      const lnamecell = document.createElement("td");
+      const emailcell = document.createElement("td");
+      const passwordcell = document.createElement("td");
+      const cpasswordcell = document.createElement("td");
+
+      fnamecell.textContent = fname;
+      lnamecell.textContent = lname;
+      emailcell.textContent = email;
+      passwordcell.textContent = password;
+      cpasswordcell.textContent = cpassword;
+
+      newRow.appendChild(fnamecell);
+      newRow.appendChild(lnamecell);
+      newRow.appendChild(emailcell);
+      newRow.appendChild(passwordcell);
+      newRow.appendChild(cpasswordcell);
+
+      document.getElementById("dataBody").appendChild(newRow);
+
+      document.getElementById("confirmation").style.display = "none";
+      document.getElementById("registrationData").style.display = "block";
+    }
+
+    function cancelRegistration() {
+      document.getElementById("registrationForm").style.display = "block";
+      document.getElementById("confirmation").style.display = "none";
+    }
+  </script>
+</body>
+</html>
