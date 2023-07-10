@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slideshow</title>
+  <style>
+    #image {
+      width: 500px;
+      height: 500px;
+    }
+    #slideshow
+    {
+        text-align: center;
+    }
+    #solid
+    {
+        text-align: center;
+        background-color: gray;
+    }
+    #centerp{
+        text-align: center;
+        
+    }
+  </style>
+</head>
+<body>
+  <h2 id="solid">Slideshow</h2>
+  <p id="centerp" >chick the image and see the changing of images</p>
+  <div id="slideshow">
+    <img id="image" src="image2.jpg" alt="Image">
+  </div>
+
+  <script>
+    var slideshow = document.getElementById("slideshow");
+    var image = document.getElementById("image");
+    var imageIndex = 0;
+    var imageUrls = [
+      "image1.jpg",
+      "image2.jpg",
+      "image3.jpg",
+      "image4.jpg",
+      "image5.jpg"
+    ];
+
+    slideshow.addEventListener("click", function() {
+      changeImage();
+    });
+
+    function changeImage() {
+    //   imageIndex++;
+      if (imageIndex >= imageUrls.length) {
+        imageIndex = 0;
+        imageIndex++;
+        
+      }
+
+      image.src = imageUrls[imageIndex];
+      image.alt = "Image " + (imageIndex + 1);
+    }
+  </script>
+</body>
+</html>

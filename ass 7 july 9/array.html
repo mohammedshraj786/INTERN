@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML with JavaScript</title>
+</head>
+<body>
+    <center>
+    
+  <h1>Get First Element of an Array</h1>
+
+  <label for="arrayInput">Enter comma-separated values:</label>
+  <input type="text" id="arrayInput"><br><br>
+
+  <button onclick="getFirstElement()">Get First Element</button>
+
+  <script>
+    function getFirstElement() {
+      const inputElement = document.getElementById("arrayInput");
+      const inputValues = inputElement.value.split(",");
+
+      const myArray = inputValues.map(value => parseInt(value.trim()));
+
+      if (Array.isArray(myArray) && myArray.length > 0) {
+        const firstElement = myArray[0];
+        alert("The first element is: " + firstElement);
+      } else {
+        alert("The array is empty or not valid.");
+      }
+    }
+  </script>
+    </center>
+</body>
+</html>
