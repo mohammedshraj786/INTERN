@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Perform Operations on Array Elements</title>
+</head>
+<body>
+  <h1>Perform Operations on Array Elements</h1>
+
+  <script>
+    const digits = [2356, 1212, 8967, 4563, 2345];
+    let sum = 0;
+    let difference = 0;
+    let product = 1;
+
+    digits.forEach((number) => {
+      sum += number;
+      difference -= number;
+      product *= number;
+    });
+
+    document.write("Sum: " + sum + "<br>");
+    document.write("Difference: " + difference + "<br>");
+    document.write("Product: " + product);
+  </script>
+</body>
+</html>
