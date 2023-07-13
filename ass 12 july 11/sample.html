@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Example</title>
+</head>
+<body>
+  <h1 id="heading">Hello, DOM!</h1>
+  <button id="changeButton">Change Text</button>
+
+  <script>
+    // Accessing DOM elements
+    const headingElement = document.getElementById('heading');
+    const changeButton = document.getElementById('changeButton');
+
+    // Event handler for button click
+    changeButton.addEventListener('click', function() {
+      // Modifying DOM element
+      headingElement.textContent = 'Text Changed!';
+    });
+  </script>
+</body>
+</html>
