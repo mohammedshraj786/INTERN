@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>copy object</title>
+</head>
+<body>
+<h2>just for checking so view result in comsole</h2>
+<script>
+
+    var student = { name: "Jose", dept: "Computer Science", year: 3 };//our input
+    var swap = swapKeysAndValues(student);//function calling
+    console.log(swap);
+
+    
+    
+    function swapKeysAndValues(obj) 
+    {
+    var result = {};
+    for (var key in obj) 
+    {
+      if (obj.hasOwnProperty(key)) 
+      {
+      result[obj[key]] = key;
+       }
+     }
+       return result;
+    }
+
+
+</script>
+
+
+
+
+
+
+    
+</body>
+</html>
