@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML PAGE</title>
+</head>
+<body id="common">
+    <div id="center">
+    <h1 id="heading"></h1>   
+    <h4 id="headingL"></h4>
+    <p id="para"></p>
+    <p id="paradate"></p>
+    <img src="image1.jpg" width="100px" height=""100px>
+    <img id="myimage" src="image1.jpg">
+     
+   </div>
+    <div id="uncommon">
+        <a id="link" href="">just click</a>
+   </div>
+    
+    <script>
+        document.getElementById("common").style.backgroundColor="red"
+        document.getElementById("center").style.textAlign="center";
+        document.getElementById("center").style.backgroundColor="gray";
+        document.getElementById("heading").innerHTML="INTERN ABOUT IN NAVADHITI";
+        document.getElementById("headingL").innerHTML="THREE MONTHS OF LEARNING";
+        document.getElementById("para").innerHTML="Grow wisely";
+        document.getElementById("paradate").innerHTML="Date : " + Date();
+        document.getElementById("myimage").src="image2.jpg";
+        document.getElementById("myimage").style.width="100px";
+        document.getElementById("myimage").style.height="100px";
+        document.getElementById("uncommon").style.textAlign="center";
+        document.getElementById("link").href="https://stackoverflow.com/";
+        document.getElementById("link").style.backgroundColor="white";
+
+
+
+    </script>
+</body>
+</html>
