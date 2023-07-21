@@ -1,0 +1,47 @@
+body{
+    background-color: grey;
+
+}
+h1{
+    text-align: center;
+}
+.tabs {
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    height: 100px;
+    width: 500px;
+    background-color:cadetblue;
+    border: none;
+    padding: 20px 75px;
+    cursor: pointer;
+    
+  }
+  
+  .tab:hover {
+    background-color: grey;
+  }
+  
+  .tab.active {
+    background-color: #13a778;
+  }
+  
+  .tab-content {
+
+    border: dotted black;
+    height: auto;
+    width: 500px;
+    display: none;
+    font-size: larger;
+    font-style: oblique;
+    font-weight: bold;
+    
+  }
+  
+  .tab-content.active {
+    display: block;
+  }

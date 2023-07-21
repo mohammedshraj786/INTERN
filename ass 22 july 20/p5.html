@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P5.JS</title>
+    <link rel="stylesheet" type="text/css" href="p5.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+
+
+
+</head>
+<body id="body">
+ <center> <h1>USING P5 JS LIBRARY</h1>
+<script>
+    function setup() {
+        createCanvas(800, 800);
+      }
+      
+      function draw() {
+        if (mouseIsPressed) {
+          fill(0);
+        } else {
+          fill(100);
+        }
+        ellipse(mouseX, mouseY, 80, 80);
+      }
+      
+    </script>
+    <!-- <script>
+        function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  ellipse(50,50,80,80);
+}
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,27 @@
+#head
+{
+    text-align: center;
+}
+#div
+{
+  
+  height: 400px;
+  width: 400px;
+  background:chartreuse;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px;
+  padding: 10px;
+ 
+
+  
+    
+}
+body{
+    background-color: cornflowerblue;
+}
+#input
+{
+    height: 20px;
+    width: 390px;
+}
+

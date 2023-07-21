@@ -1,0 +1,51 @@
+body {
+    background-color: aquamarine;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  #circle
+
+  
+  {
+    text-align: center;
+    font-style:italic;
+  }
+  #rectangle
+  {
+    text-align: center;
+    font-style:italic;
+  }
+  #triangle
+  {
+    text-align: center;
+    font-style:italic;
+  }
+  
+  
+  
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    width: 70px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+
+  }
+  
+  #circleResults,
+  #rectangleResults,
+  #triangleResults {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

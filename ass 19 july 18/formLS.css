@@ -1,0 +1,45 @@
+#form
+{
+  
+    padding: 20px;
+   
+    text-align:center;
+
+    
+}
+#body
+{
+    
+    background-color:#ffdd00f0;
+    border: solid black 5px;
+
+}
+::placeholder
+{
+   font-style: italic;
+   color:red;
+}
+label{
+    font-weight:900;
+   
+    
+}
+h1
+{
+    font-style: italic;
+}
+#submit
+{
+    font-weight: bolder;
+
+}
+#displayData
+{
+    text-align: center;
+    font-style: italic;
+}
+#gmail
+{
+    padding:20px;
+    margin: 20px 20px;
+}

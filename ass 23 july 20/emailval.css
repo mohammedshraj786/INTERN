@@ -1,0 +1,17 @@
+body
+{
+    background-color:chocolate;
+    text-align: center;
+    padding: 80px;
+
+}
+label{
+    border: 3px;
+    font-style: italic;
+    
+
+
+}
+button{
+    font-weight: bolder;
+}
