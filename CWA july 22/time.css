@@ -1,0 +1,21 @@
+#div
+{
+    background-color: black;
+    padding: 10px;
+    border-radius: 30px;
+}
+#time
+{
+    color: aqua;
+    font-weight: bolder;
+    font-size: 80px;
+    text-align: center;
+
+
+}
+h1{
+    text-align: center;
+}
+body{
+    background-color: yellow;
+}

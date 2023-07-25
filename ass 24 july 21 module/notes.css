@@ -1,0 +1,38 @@
+.head
+{
+  text-align: center;
+}
+body {
+  background-color: blueviolet;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  padding: 20px;
+  gap: 20px;
+}
+
+.note {
+  height: 200px;
+  box-sizing: border-box;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+}
+
+.add-note {
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+  font-size: 80px;
+  cursor:progress;
+}
+
+.add-note:hover {
+  background-color: darkmagenta;
+}
+h2{
+  color:darkgreen;
+}
