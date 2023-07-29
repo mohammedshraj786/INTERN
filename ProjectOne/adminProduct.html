@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductAddingPageByAdmin</title>
+    <link rel="stylesheet" type="text/css" href="adminProduct.css">
+</head>
+
+<body>
+    <h1 style="align-content: center;padding:0px;margin: 0px;">Admin Page</h1>
+    <div id="container">
+        
+        <div id="formdiv">
+            <form id="adminForm">
+                    <h2>Organic Farm Land</h2><br>
+                    <h3>Add Product</h3>
+                    <div class="admin-group">
+                        <label for="Pname">Product Name</label>
+                        <input type="text" id="Pname" required><br>
+                    </div>
+
+                    <div class="admin-group">
+                        <label for="pdp">Product description</label>
+                        <input type="text" id="pdp" required><br>
+                    </div>
+                    <div class="admin-group">
+                        <label for="price">Price</label>
+                        <input type="number" id="price" placeholder="in rupees" required><br>
+                    </div>
+
+                    <button type="submit">Add New Product</button><br><br>
+                    <button id="hideBtn" class="btn btn-danger">LOGOUT</button>
+            
+            </form>
+        </div>
+            
+    
+    </div>
+    <div id="cardContainer">
+
+        <button id="DisplayProduct">DISPLAY PRODUCTS</button><br><br>     
+ </div>   
+ <!-- <div id="logout">
+    <button id="hideBtn" class="btn btn-danger">LOGOUT</button>
+    </div>
+         -->
+  
+
+
+
+
+
+
+
+
+
+    
+    <script src="adminProduct.js"></script>
+</body>
+
+</html>
